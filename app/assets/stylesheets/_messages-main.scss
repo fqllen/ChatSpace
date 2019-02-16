@@ -1,0 +1,63 @@
+.chat-main {
+  background-color: #eeeeee;
+  width: calc(100% - 273px);
+  float: right;
+  height: 100%;
+}
+.main-header {
+  background-color: #FFFFFF;
+  height: 91px;
+  padding: 0 40px;
+  &__box {
+    padding-top: 30px;
+    &--title {
+      color: #333333;
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+    &--member {
+    color: #999999;
+    font-size: 12px
+    }
+    &--edit {
+      color: #38AEF0;
+      height: 40px;
+      padding: 0 20px;
+      float: right;
+      line-height: 40px;
+      margin-top: 23px;
+      border: solid 1px;
+    }
+  }
+}
+
+
+.message {
+  height: calc(100% - 266px);
+  width: calc(100% - 80px);
+  padding: 46px 40px ;
+  &-box {
+    padding-bottom: 40px;
+    &__text {
+    font-size: 14px;
+    color: #434A54;
+    padding-top: 10px;
+    clear: both;
+    }
+    &__person {
+      &--name{
+        font-size: 16px;
+        color: #434A54;
+        float: left;
+        font-weight: bold;
+      }
+
+      &--timestamp {
+        font-size: 12px;
+        float:left;
+        padding-left: 10px;
+        color: #999999;
+      }
+    }
+  }
+}

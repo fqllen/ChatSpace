@@ -1,0 +1,64 @@
+$width-side: 273px;
+$height-side: 63px;
+
+
+.side-header {
+
+
+.side-header {
+  background-color: #2f3e51;
+  height: 100%;
+  float: left;
+  position: relative;
+  width: $width-side;
+}
+
+.header {
+  background-color: #253141;
+  height: $height-side;
+  width: $width-side;
+  padding-top: 28px;
+  &__name {
+    color: #FFFFFF;
+    position: absolute;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    margin-top:6px;
+  }
+}
+.icon-2{
+  color: #FFFFFF;
+  float: right;
+  font-size: 13px;
+  padding-right: 4px;
+  margin-top:6px;
+  padding-top: 4px;
+}
+
+.icon-1 {
+  color: #FFFFFF;
+  float: right;
+  font-size: 13px;
+  padding-right: 14px;
+  margin-top:6px;
+  padding-top: 4px;
+}
+
+
+.side-groups {
+  margin: 20px 20px 0;
+  .side-group {
+    margin-bottom: 40px;
+    &__title {
+      color: #FFFFFF;
+      font-size: 15px;
+      margin-bottom: 5px;
+      &--talk {
+        color: #FFFFFF;
+        font-size: 11px;
+      }
+    }
+  }
+}

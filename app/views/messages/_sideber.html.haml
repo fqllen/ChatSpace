@@ -1,0 +1,27 @@
+.side-header
+  .header
+    %h3.header__name
+      = current_user.name
+    %ul.header__lists
+      %li.list
+        = link_to edit_user_path(current_user) do
+          = fa_icon 'cog', class: 'icon-1'
+      %li.list
+        = link_to do
+          = fa_icon 'edit', class: 'icon-2'
+  .side-groups
+    .side-group
+      %a
+        .side-group__title 神
+      %a
+        .side-group__title--talk ttttttttt
+    .side-group
+      %a
+        .side-group__title aaaaa
+      %a
+        .side-group__title--talk まだメッセージはありません
+    .side-group
+      %a
+        .side-group__title fggfgg
+      %a
+        .side-group__title--talk まだメッセージはありません

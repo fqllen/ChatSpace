@@ -1,0 +1,32 @@
+.chat-main
+  .main-header
+    = link_to do
+      .main-header__box--edit Edit
+    .main-header__box
+      %h2.main-header__box--title
+        sampleグループ
+      %ul.main-header__box--member
+        Menber
+
+  .message
+    .message-box
+      .message-box__person
+        .message-box__person--name Ryosuke
+        .message-box__person--timestamp 2019/02/05(Tue) 20:26:50
+      %p.message-box__text aaaaaaaaaaaaaaaaテキストテキスト
+    .message-box
+      .message-box__person
+        %p.message-box__person--name Ryosuke
+        %p.message-box__person--timestamp 2019/02/05(Tue) 20:26:52
+      %p.message-box__text sssssssssssssssssテキストテキスト
+
+
+  .form
+    .input-box
+      %input.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
+      %label.input-box__image{for: "message_image"}
+        %input#message_image.input-box__image__file{name: "message[image]", type: "file"}/
+        %i.far.fa-image
+    %input.submit-btn{name: "commit", type: "submit", value: "Send"}/
+
+
