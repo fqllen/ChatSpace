@@ -134,3 +134,383 @@ app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_htm
   Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
   Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (150.2ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-16 19:16:01 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (20.1ms)
+Completed 500 Internal Server Error in 212ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: user.
+Load paths:
+  /Users/hatakeyamakouhei/ChatSpace/app/assets/config
+  /Users/hatakeyamakouhei/ChatSpace/app/assets/images
+  /Users/hatakeyamakouhei/ChatSpace/app/assets/javascripts
+  /Users/hatakeyamakouhei/ChatSpace/app/assets/stylesheets
+  /Users/hatakeyamakouhei/ChatSpace/vendor/assets/javascripts
+  /Users/hatakeyamakouhei/ChatSpace/vendor/assets/stylesheets
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/font-awesome-rails-4.7.0.4/app/assets/fonts
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/font-awesome-rails-4.7.0.4/app/assets/stylesheets
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actioncable-5.0.7.1/lib/assets/compiled
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts):
+     6:       %link{href: "https://use.fontawesome.com/releases/v5.6.1/css/all.css", rel: "stylesheet"}/
+     7:     %title ChatSpace
+     8:     = csrf_meta_tags
+     9:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    10:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    11:   %body
+    12:     = yield
+  
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_html_haml__2636389885037804796_70228221771160'
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.7ms)
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (122.9ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-16 19:16:09 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: user.
+Load paths:
+  /Users/hatakeyamakouhei/ChatSpace/app/assets/config
+  /Users/hatakeyamakouhei/ChatSpace/app/assets/images
+  /Users/hatakeyamakouhei/ChatSpace/app/assets/javascripts
+  /Users/hatakeyamakouhei/ChatSpace/app/assets/stylesheets
+  /Users/hatakeyamakouhei/ChatSpace/vendor/assets/javascripts
+  /Users/hatakeyamakouhei/ChatSpace/vendor/assets/stylesheets
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/font-awesome-rails-4.7.0.4/app/assets/fonts
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/font-awesome-rails-4.7.0.4/app/assets/stylesheets
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/jquery-rails-4.3.3/vendor/assets/javascripts
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actioncable-5.0.7.1/lib/assets/compiled
+  /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts):
+     6:       %link{href: "https://use.fontawesome.com/releases/v5.6.1/css/all.css", rel: "stylesheet"}/
+     7:     %title ChatSpace
+     8:     = csrf_meta_tags
+     9:     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    10:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    11:   %body
+    12:     = yield
+  
+app/assets/stylesheets/application.scss:3
+app/views/layouts/application.html.haml:9:in `_app_views_layouts_application_html_haml__2636389885037804796_70228221520680'
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (132.0ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-16 19:16:17 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 365ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_notifications with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/Users/hatakeyamakouhei/ChatSpace/app/views"
+  * "/Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.6.1/app/views"
+):
+    10:     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    11:   %body
+    12:     = yield
+    13:     = render 'layouts/notifications'
+  
+app/views/layouts/application.html.haml:13:in `_app_views_layouts_application_html_haml__2636389885037804796_70228215763020'
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (114.7ms)
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-16 19:16:29 +0900
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/devise-4.6.1/app/views/devise/sessions/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-16 19:20:56 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (3.6ms)
+  Rendered devise/sessions/new.html.haml within layouts/application (50.0ms)
+Completed 200 OK in 334ms (Views: 303.8ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-16 19:20:59 +0900
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.haml within layouts/application
+  Rendered devise/shared/_links.html.haml (2.1ms)
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _app_views_devise_registrations_new_html_haml__789243078702768047_70130664072420 at /Users/hatakeyamakouhei/ChatSpace/app/views/devise/registrations/new.html.haml:9)
+  Rendered devise/registrations/new.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-02-16 19:21:10 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j++VQl1bTQR/E7UcKVqmI4Hjfg28jwuOtsvV8mHQvUW40kliAfgNFVdjXNJIqlipcGKR96tXeve8ZaKBG6LKLg==", "user"=>{"name"=>"aaaa", "email"=>"aasa@sasasd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Unpermitted parameter: name
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'aasa@sasasd' LIMIT 1[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`) VALUES ('aasa@sasasd', '$2a$11$4Et8g5Kq2st.KVLDSdwZCOZGhroN88npNeliC7pAA1kzQ7jlF7mdq')[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Field 'name' doesn't have a default value: INSERT INTO `users` (`email`, `encrypted_password`) VALUES ('aasa@sasasd', '$2a$11$4Et8g5Kq2st.KVLDSdwZCOZGhroN88npNeliC7pAA1kzQ7jlF7mdq')):
+  
+mysql2 (0.4.10) lib/mysql2/client.rb:120:in `_query'
+mysql2 (0.4.10) lib/mysql2/client.rb:120:in `block in query'
+mysql2 (0.4.10) lib/mysql2/client.rb:119:in `handle_interrupt'
+mysql2 (0.4.10) lib/mysql2/client.rb:119:in `query'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:218:in `block in execute'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract_adapter.rb:590:in `block in log'
+activesupport (5.0.7.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract_adapter.rb:583:in `log'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:218:in `execute'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/mysql/database_statements.rb:31:in `execute'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:225:in `execute_and_free'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/mysql/database_statements.rb:36:in `exec_query'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/database_statements.rb:92:in `exec_insert'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/database_statements.rb:124:in `insert'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/query_cache.rb:17:in `insert'
+activerecord (5.0.7.1) lib/active_record/relation.rb:65:in `insert'
+activerecord (5.0.7.1) lib/active_record/persistence.rb:572:in `_create_record'
+activerecord (5.0.7.1) lib/active_record/counter_cache.rb:128:in `_create_record'
+activerecord (5.0.7.1) lib/active_record/locking/optimistic.rb:75:in `_create_record'
+activerecord (5.0.7.1) lib/active_record/attribute_methods/dirty.rb:123:in `_create_record'
+activerecord (5.0.7.1) lib/active_record/callbacks.rb:302:in `block in _create_record'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_create_callbacks'
+activerecord (5.0.7.1) lib/active_record/callbacks.rb:302:in `_create_record'
+activerecord (5.0.7.1) lib/active_record/timestamp.rb:68:in `_create_record'
+activerecord (5.0.7.1) lib/active_record/persistence.rb:548:in `create_or_update'
+activerecord (5.0.7.1) lib/active_record/callbacks.rb:298:in `block in create_or_update'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_save_callbacks'
+activerecord (5.0.7.1) lib/active_record/callbacks.rb:298:in `create_or_update'
+activerecord (5.0.7.1) lib/active_record/persistence.rb:129:in `save'
+activerecord (5.0.7.1) lib/active_record/validations.rb:44:in `save'
+activerecord (5.0.7.1) lib/active_record/attribute_methods/dirty.rb:22:in `save'
+activerecord (5.0.7.1) lib/active_record/transactions.rb:319:in `block (2 levels) in save'
+activerecord (5.0.7.1) lib/active_record/transactions.rb:395:in `block in with_transaction_returning_status'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/database_statements.rb:232:in `block in transaction'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/transaction.rb:189:in `within_new_transaction'
+activerecord (5.0.7.1) lib/active_record/connection_adapters/abstract/database_statements.rb:232:in `transaction'
+activerecord (5.0.7.1) lib/active_record/transactions.rb:211:in `transaction'
+activerecord (5.0.7.1) lib/active_record/transactions.rb:392:in `with_transaction_returning_status'
+activerecord (5.0.7.1) lib/active_record/transactions.rb:319:in `block in save'
+activerecord (5.0.7.1) lib/active_record/transactions.rb:334:in `rollback_active_record_state!'
+activerecord (5.0.7.1) lib/active_record/transactions.rb:318:in `save'
+activerecord (5.0.7.1) lib/active_record/suppressor.rb:41:in `save'
+devise (4.6.1) app/controllers/devise/registrations_controller.rb:19:in `create'
+actionpack (5.0.7.1) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.7.1) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.7.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.7.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.7.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.7.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.7.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.7.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.7.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.7.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.7.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.7.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.7.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.7.1) lib/action_dispatch/routing/mapper.rb:16:in `block in <class:Constraints>'
+actionpack (5.0.7.1) lib/action_dispatch/routing/mapper.rb:46:in `serve'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:727:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.7.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (147.6ms)
+Started POST "/users" for 127.0.0.1 at 2019-02-16 19:24:01 +0900
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j++VQl1bTQR/E7UcKVqmI4Hjfg28jwuOtsvV8mHQvUW40kliAfgNFVdjXNJIqlipcGKR96tXeve8ZaKBG6LKLg==", "user"=>{"name"=>"aaaa", "email"=>"aasa@sasasd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'aasa@sasasd' LIMIT 1[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `encrypted_password`) VALUES ('aaaa', 'aasa@sasasd', '$2a$11$XYZmcIcMFi2JA2b6ZB/wRuiXF37AasjXuiMGgoUk98xjJRW2QKkW.')[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 166ms (ActiveRecord: 17.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-16 19:24:01 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_sideber.html.haml (8.5ms)
+  Rendered messages/_comment.html.haml (14.0ms)
+  Rendered messages/index.html.haml within layouts/application (29.2ms)
+Completed 200 OK in 61ms (Views: 56.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-16 19:26:07 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_sideber.html.haml (5.9ms)
+  Rendered messages/_comment.html.haml (8.9ms)
+  Rendered messages/index.html.haml within layouts/application (22.2ms)
+Completed 200 OK in 79ms (Views: 55.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2019-02-16 19:26:10 +0900
+  
+AbstractController::ActionNotFound (The action 'edit' could not be found for UsersController):
+  
+actionpack (5.0.7.1) lib/abstract_controller/base.rb:121:in `process'
+actionview (5.0.7.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.7.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.7.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.7.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.7.1) lib/action_dispatch/routing/route_set.rb:727:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.7.1) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.7.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.1) lib/rails/engine.rb:522:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+  Rendering /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout
+  Rendered /Users/hatakeyamakouhei/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+Started GET "/" for 127.0.0.1 at 2019-02-16 19:26:14 +0900
+Processing by MessagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/_sideber.html.haml (6.6ms)
+  Rendered messages/_comment.html.haml (8.6ms)
+  Rendered messages/index.html.haml within layouts/application (21.6ms)
+Completed 200 OK in 57ms (Views: 51.9ms | ActiveRecord: 0.4ms)
+
+
