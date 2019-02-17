@@ -47,18 +47,22 @@ $height-side: 63px;
 }
 
 
-.side-groups {
+.groups {
   margin: 20px 20px 0;
-  .side-group {
+  .group {
+    box-sizing: border-box;
     margin-bottom: 40px;
-    &__title {
+    &__name {
       color: #FFFFFF;
       font-size: 15px;
       margin-bottom: 5px;
-      &--talk {
+    }
+    &__message {
         color: #FFFFFF;
         font-size: 11px;
-      }
     }
   }
 }
+
+
+

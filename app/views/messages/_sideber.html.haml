@@ -9,19 +9,12 @@
       %li.list
         = link_to new_group_path do
           = fa_icon 'edit', class: 'icon-2'
-  .side-groups
-    .side-group
-      %a
-        .side-group__title 神
-      %a
-        .side-group__title--talk ttttttttt
-    .side-group
-      %a
-        .side-group__title aaaaa
-      %a
-        .side-group__title--talk まだメッセージはありません
-    .side-group
-      %a
-        .side-group__title fggfgg
-      %a
-        .side-group__title--talk まだメッセージはありません
+
+  .groups
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path(group) do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
