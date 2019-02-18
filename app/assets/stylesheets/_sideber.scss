@@ -47,22 +47,57 @@ $height-side: 63px;
 }
 
 
+// .groups {
+//   margin: 20px 20px 0;
+//   .group {
+//     box-sizing: border-box;
+//     margin-bottom: 40px;
+//     &__name {
+//       color: #FFFFFF;
+//       font-size: 15px;
+//       margin-bottom: 5px;
+//     }
+//     &__message {
+//         color: #FFFFFF;
+//         font-size: 11px;
+//     }
+//   }
+// }
+
+
 .groups {
-  margin: 20px 20px 0;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
   .group {
     box-sizing: border-box;
-    margin-bottom: 40px;
+    padding: 20px 0 40px;
     &__name {
       color: #FFFFFF;
       font-size: 15px;
-      margin-bottom: 5px;
+      margin-top: 5px;
     }
     &__message {
-        color: #FFFFFF;
-        font-size: 11px;
+      color: #FFFFFF;
+      font-size: 11px;
     }
   }
 }
 
-
-
+.groups {
+  // background-color: $side_blue_light;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  .group {
+    box-sizing: border-box;
+    padding: 20px 0 40px;
+    &__name {
+      color: #FFFFFF;
+      font-size: 15px;
+    }
+    &__message {
+      color: #FFFFFF;
+      font-size: 11px;
+      margin-top: 5px;
+    }
+  }
+}
