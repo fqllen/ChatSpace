@@ -5,7 +5,7 @@
   height: 100%;
 }
 .main-header {
-  background-color: #FFFFFF;
+  background-color: $white;
   height: 91px;
   padding: 0 40px;
   &__box {
@@ -18,11 +18,11 @@
       }
     }
     &__member {
-    color: #999999;
+    color: $light_gray;
     font-size: 12px
     }
     &--edit {
-      color: #38AEF0;
+      color: $light_blue;
       height: 40px;
       padding: 0 20px;
       float: right;
@@ -42,14 +42,14 @@
     padding-bottom: 40px;
     &__text {
     font-size: 14px;
-    color: #434A54;
+    color: $black;
     padding-top: 10px;
     clear: both;
     }
     &__person {
       &--name{
         font-size: 16px;
-        color: #434A54;
+        color: $black;
         float: left;
         font-weight: bold;
       }
@@ -58,7 +58,7 @@
         font-size: 12px;
         float:left;
         padding-left: 10px;
-        color: #999999;
+        color: $light_gray;
       }
     }
   }

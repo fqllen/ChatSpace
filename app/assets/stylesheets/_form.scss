@@ -1,5 +1,3 @@
-$height-form: 43px;
-
 .form {
   background-color: #AAAAAA;
   height: $height-form;
@@ -10,9 +8,9 @@ $height-form: 43px;
 
 .input-box {
   &__text {
-    background-color: #FFFFFF;
+    background-color: $white;
     font-size: 16px;
-    color: #434A54;
+    color: $black;
     height: $height-form;
     float: left;
     padding: 0 10px;
@@ -30,8 +28,8 @@ $height-form: 43px;
 }
 
 .submit-btn {
-  background-color: #38AEF0;
-  color: #FFFFFF;
+  background-color: $light_blue;
+  color: $white;
   float: right;
   margin-left: 15px;
   font-size: 16px;

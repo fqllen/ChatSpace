@@ -1,12 +1,5 @@
-$width-side: 273px;
-$height-side: 63px;
-
-
-
-
-
 .side-header {
-  background-color: #2f3e51;
+  background-color: $side_blue_light;
   height: 100%;
   float: left;
   position: relative;
@@ -19,7 +12,7 @@ $height-side: 63px;
   width: $width-side;
   padding-top: 28px;
   &__name {
-    color: #FFFFFF;
+    color: $white;
     position: absolute;
     font-size: 16px;
     padding-left: 20px;
@@ -29,7 +22,7 @@ $height-side: 63px;
   }
 }
 .icon-2{
-  color: #FFFFFF;
+  color: $white;
   float: right;
   font-size: 13px;
   padding-right: 4px;
@@ -38,31 +31,13 @@ $height-side: 63px;
 }
 
 .icon-1 {
-  color: #FFFFFF;
+  color: $white;
   float: right;
   font-size: 13px;
   padding-right: 14px;
   margin-top:6px;
   padding-top: 4px;
 }
-
-
-// .groups {
-//   margin: 20px 20px 0;
-//   .group {
-//     box-sizing: border-box;
-//     margin-bottom: 40px;
-//     &__name {
-//       color: #FFFFFF;
-//       font-size: 15px;
-//       margin-bottom: 5px;
-//     }
-//     &__message {
-//         color: #FFFFFF;
-//         font-size: 11px;
-//     }
-//   }
-// }
 
 
 .groups {
@@ -72,12 +47,12 @@ $height-side: 63px;
     box-sizing: border-box;
     padding: 20px 0 40px;
     &__name {
-      color: #FFFFFF;
+      color: $white;
       font-size: 15px;
       margin-top: 5px;
     }
     &__message {
-      color: #FFFFFF;
+      color: $white;
       font-size: 11px;
     }
   }
@@ -91,11 +66,11 @@ $height-side: 63px;
     box-sizing: border-box;
     padding: 20px 0 40px;
     &__name {
-      color: #FFFFFF;
+      color: $white;
       font-size: 15px;
     }
     &__message {
-      color: #FFFFFF;
+      color: $white;
       font-size: 11px;
       margin-top: 5px;
     }
