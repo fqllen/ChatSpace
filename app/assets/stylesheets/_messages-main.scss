@@ -10,12 +10,14 @@
   padding: 0 40px;
   &__box {
     padding-top: 30px;
-    &--title {
+    &__title {
       color: #333333;
-      font-size: 20px;
       margin-bottom: 14px;
+      &__name{
+        font-size: 20px;
+      }
     }
-    &--member {
+    &__member {
     color: #999999;
     font-size: 12px
     }

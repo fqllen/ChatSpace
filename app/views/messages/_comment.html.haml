@@ -3,12 +3,10 @@
     = link_to edit_group_path(current_user) do
       .main-header__box--edit Edit
     .main-header__box
-      %h2.main-header__box--title
+      %h2.main-header__box__title
         Sample
-      %ul.main-header__box--member
+      %ul.main-header__box__member
         Member :
-        %li
-
   .message
     .message-box
       .message-box__person
@@ -31,3 +29,15 @@
     %input.submit-btn{name: "commit", type: "submit", value: "Send"}/
 
 
+/ .chat
+/   .chat__info
+/     .chat__info-left
+/       .chat__info-left__name
+/         %p
+/           / = @group.name
+/       .chat__info-left__members
+/         %p
+/           Members:
+/           / = @users.pluck(:name).join(",")
+/     .chat__info-right
+/       / = link_to 'Edit', edit_group_path(@group.id), class: "btn"
