@@ -13,13 +13,11 @@
     &__title {
       color: #333333;
       margin-bottom: 14px;
-      &__name{
-        font-size: 20px;
-      }
+      font-size: 20px;
     }
     &__member {
     color: $light_gray;
-    font-size: 12px
+    font-size: 11px
     }
     &--edit {
       color: $light_blue;
