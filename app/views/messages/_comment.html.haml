@@ -1,30 +1,7 @@
-.chat-main
-  .main-header
-    = link_to edit_group_path(current_user) do
-      .main-header__box--edit Edit
-    .main-header__box
-      %h2.main-header__box__title
-        = @group.name
-      %ul.main-header__box__member
-        Member:
-
-  .message
-    .message-box
-      .message-box__person
-        .message-box__person--name Ryosuke
-        .message-box__person--timestamp 2019/02/05(Tue) 20:26:50
-      %p.message-box__text aaaaaaaaaaaaaaaaテキストテキスト
-    .message-box
-      .message-box__person
-        %p.message-box__person--name Ryosuke
-        %p.message-box__person--timestamp 2019/02/05(Tue) 20:26:52
-      %p.message-box__text sssssssssssssssssテキストテキスト
-
-  .form
-    = form_for [@group, @message] do |f|
-      = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
-      = f.label :image, class: 'input-box__image' do
-        = fa_icon 'picture-o', class: 'fa-image'
-        = f.file_field :image, class: 'input-box__image__file'
-      = f.submit 'Send', class: 'submit-btn'
-
+.form
+  = form_for [@group, @message] do |f|
+    = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
+    = f.label :image, class: 'input-box__image' do
+      = fa_icon 'picture-o', class: 'fa-image'
+      = f.file_field :image, class: 'input-box__image__file'
+    = f.submit 'Send', class: 'submit-btn'

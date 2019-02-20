@@ -1,7 +1,9 @@
 %wrapper
-  = render "side_bar"
-  = render "comment"
+  = render "shared/side_bar"
+  .chat-main
+    = render "group_top"
+    .messages
+      = render @messages
 
-
-
+    = render "comment"
 

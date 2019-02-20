@@ -1,0 +1,8 @@
+.main-header
+  = link_to edit_group_path(@group) do
+    .main-header__box--edit Edit
+  .main-header__box
+    %h2.main-header__box__title
+      = @group.name
+    %ul.main-header__box__member
+      Member:
