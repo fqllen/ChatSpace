@@ -20,25 +20,11 @@
         %p.message-box__person--timestamp 2019/02/05(Tue) 20:26:52
       %p.message-box__text sssssssssssssssssテキストテキスト
 
-
   .form
-    .input-box
-      %input.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
-      %label.input-box__image{for: "message_image"}
-        %input#message_image.input-box__image__file{name: "message[image]", type: "file"}/
-        %i.far.fa-image
-    %input.submit-btn{name: "commit", type: "submit", value: "Send"}/
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
+      = f.label :image, class: 'input-box__image' do
+        = fa_icon 'picture-o', class: 'fa-image'
+        = f.file_field :image, class: 'input-box__image__file'
+      = f.submit 'Send', class: 'submit-btn'
 
-
-/ .chat
-/   .chat__info
-/     .chat__info-left
-/       .chat__info-left__name
-/         %p
-/           / = @group.name
-/       .chat__info-left__members
-/         %p
-/           Members:
-/           / = @users.pluck(:name).join(",")
-/     .chat__info-right
-/       / = link_to 'Edit', edit_group_path(@group.id), class: "btn"
