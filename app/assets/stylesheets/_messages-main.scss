@@ -7,19 +7,17 @@
 .main-header {
   background-color: $white;
   height: 91px;
-  padding: 0 40px;
+  padding: 0 37px;
   &__box {
     padding-top: 30px;
     &__title {
       color: #333333;
       margin-bottom: 14px;
-      &__name{
-        font-size: 20px;
-      }
+      font-size: 20px;
     }
     &__member {
     color: $light_gray;
-    font-size: 12px
+    font-size: 11px
     }
     &--edit {
       color: $light_blue;
@@ -33,32 +31,35 @@
   }
 }
 
-
-.message {
-  height: calc(100% - 266px);
-  width: calc(100% - 80px);
-  padding: 46px 40px ;
-  &-box {
+.messages {
+  overflow: scroll;
+  height: calc(100% - 260px);
+  width: calc(100% - 74px);
+  padding: 43px 37px ;
+  .message {
     padding-bottom: 40px;
-    &__text {
-    font-size: 14px;
-    color: $black;
-    padding-top: 10px;
-    clear: both;
-    }
-    &__person {
-      &--name{
-        font-size: 16px;
-        color: $black;
-        float: left;
-        font-weight: bold;
+    &-box {
+      display: flex;
+      &__text {
+      font-size: 14px;
+      color: $black;
+      padding-top: 7px;
+      clear: both;
       }
+      &__person {
+        &--name{
+          font-size: 16px;
+          color: $black;
+          float: left;
+          font-weight: bold;
+        }
 
-      &--timestamp {
-        font-size: 12px;
-        float:left;
-        padding-left: 10px;
-        color: $light_gray;
+        &--timestamp {
+          font-size: 12px;
+          float:left;
+          padding-left: 10px;
+          color: $light_gray;
+        }
       }
     }
   }
