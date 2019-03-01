@@ -7,7 +7,7 @@ $(function() {
     var html = `
         <div class="message" data-message-id="${message.id}">
           <div class="message-box">
-            <div class="message-box__person">${message.name}</div>
+            <div class="message-box__person">${message.user_name}</div>
             <div class="message-box__person--timestamp">${message.date}</div>
           </div>
           <div class="message-box__text">
