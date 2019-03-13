@@ -1,5 +1,5 @@
 $(function() {
-  function buildHTML(message){
+  function appendSendMessageHTML(message){
     var addImage = message.image == null ? "" : `<img src="${message.image}" class="lower-message__image">`
     var html = `
                   <div class="message" data-message-id="${message.id}">
@@ -33,7 +33,7 @@ $(function() {
     .done(function(message){
       $('.submit-btn').prop('disabled', false);
     if(message.length != 0){
-      buildHTML(message);
+      appendSendMessageHTML(message);
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
       $('#new_message')[0].reset();
     }
@@ -46,10 +46,10 @@ $(function() {
 
 
   if (window.location.href.match(/\/groups\/\d+\/messages/)){
-       setInterval(autoUpdate,5000)
+       setInterval(MessageHtmlAutoUpdate,5000)
   };
 
-  function autoUpdate() {
+  function MessageHtmlAutoUpdate() {
     var href = $(this).attr("action")
       if($('.messages')[0]){
         var message_id = $('.message').last().attr('data-message-id');
@@ -70,7 +70,7 @@ $(function() {
 
     .done(function(messages) {
       $.each(messages, function(i, message){ //'messages'を'message'に代入してeachで回す
-        buildHTML(message);
+        appendSendMessageHTML(message);
       });
     })
     .fail(function(){
