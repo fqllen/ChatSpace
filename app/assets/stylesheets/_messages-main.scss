@@ -12,12 +12,15 @@
     padding-top: 30px;
     &__title {
       color: #333333;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       font-size: 20px;
+      display: flex;
     }
     &__member {
+    display: inline-flex;
     color: $light_gray;
     font-size: 11px
+
     }
     &--edit {
       color: $light_blue;
