@@ -1,6 +1,5 @@
 $(function() {
   function buildHTML(message){
-    var addImage = '';
     if (message.image) {
       addImage = `<img src="${message.image}" class="lower-message__image">`;
     }
@@ -46,8 +45,7 @@ $(function() {
   })
 
 
-  function addNewMessagesHTML(message){
-    var addImage = '';
+  function buildHTML(message){
     if (message.image) {
       addImage = `<img src="${message.image}" class="lower-message__image">`;
     }
@@ -93,7 +91,7 @@ $(function() {
 
     .done(function(messages) {
       $.each(messages, function(i, message){ //'messages'を'message'に代入してeachで回す
-        addNewMessagesHTML(message);
+        buildHTML(message);
       });
     })
     .fail(function(){
